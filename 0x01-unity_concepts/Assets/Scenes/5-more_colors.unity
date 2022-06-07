@@ -132,8 +132,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393393443681049184, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_Name
-      value: Ball (4)
+      value: Green Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5393393443681049186, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b33a5d3834c9aa40ab719d0bfbf2361, type: 2}
     - target: {fileID: 5393393443681049188, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -367,8 +371,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393393443681049184, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_Name
-      value: Ball (1)
+      value: Blue Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5393393443681049186, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 320c7163cd710f14caf74f4f85b37983, type: 2}
     - target: {fileID: 5393393443681049188, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -424,8 +432,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393393443681049184, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_Name
-      value: Ball (3)
+      value: White Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5393393443681049186, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c98f21d142dbdc14e88db737c3acd4b7, type: 2}
     - target: {fileID: 5393393443681049188, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -481,8 +493,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393393443681049184, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_Name
-      value: Ball (2)
+      value: Black Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5393393443681049186, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1b316c6e3f9f14abe0118520a0d8d3, type: 2}
     - target: {fileID: 5393393443681049188, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -635,8 +651,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393393443681049184, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Red Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5393393443681049186, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7324ee545f88c0546973203cc88e453b, type: 2}
     - target: {fileID: 5393393443681049188, guid: 326cfe310a81a194990e6e7437765d34, type: 3}
       propertyPath: m_RootOrder
       value: 5
