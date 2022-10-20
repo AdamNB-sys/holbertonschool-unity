@@ -12,3 +12,9 @@
 * How to add an icon to your build
 * What is a profiler and how to use it to check your project's performance
 * What to consider when developing for different platforms
+
+
+## Goals
+```
+This repository will contain the final iteration of the Unity Maze project
+```
