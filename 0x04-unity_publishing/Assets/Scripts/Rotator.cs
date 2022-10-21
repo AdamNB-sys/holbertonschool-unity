@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Sets rotation rate of coin objects
+/// </summary>
 public class Rotator : MonoBehaviour
 {
     // Update is called once per frame

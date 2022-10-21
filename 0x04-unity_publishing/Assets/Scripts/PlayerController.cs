@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// PlayerController
+/// Handles everything related to the player object
+/// Allows for movement, item pickup, mat interactions, 
+/// as well as score and health setting
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     public float speed;

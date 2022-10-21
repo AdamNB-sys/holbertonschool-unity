@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Public class MainMenu
+/// This handles all funcitonality of the
+/// main menu, and handles the material 
+/// change for color blind mode
+/// </summary>
 public class MainMenu : MonoBehaviour
 {
     public Material trapMat;
