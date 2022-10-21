@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public Rigidbody rb;
-    private Vector3 moveInput;
+    // private Vector3 moveInput;
     private int score = 0;
     public int health = 5;
     public Text scoreText;
@@ -20,13 +20,17 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Setting variables for player movement
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.z = Input.GetAxisRaw("Vertical");
+        //moveInput.x = Input.GetAxisRaw("Horizontal");
+        //moveInput.z = Input.GetAxisRaw("Vertical");
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
         // Stops player from moving faster on diagonal
-        moveInput.Normalize();
+        //moveInput.Normalize();
+        Vector3 moveInput = new Vector3(x, 0, z);
 
-        rb.velocity = moveInput * speed;
+        //rb.velocity = moveInput * speed;
+        rb.AddForce(moveInput * speed);
     }
 
     void OnTriggerEnter(Collider other)
