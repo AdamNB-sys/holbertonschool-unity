@@ -4,30 +4,29 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed = 5;
-    public Rigidbody rb;
+    public CharacterController controller;
+    public Transform camera;
 
-    // make cursor invisible
-    // private void Start() 
-    // {
-    //     Cursor.lockState = CursorLockMode.Locked;
-    //     Cursor.visible = false;
-    // }
+    public float speed = 5f;
+
+    public float turnSmoothTime = 0.1f;
+    float smoothVelocity;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        // Player movement controller
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-        //Vector3 inputDir = orientation.forward * vertical + orientation.right * horizontal;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        Vector3 moveInput = new Vector3(x, 0f, z).normalized;
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + camera.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref smoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-        rb.velocity = moveInput * playerSpeed;
-
-
-        // if (inputDir != Vector3.zero)
-        //     playerObj.forward - Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
     }
 }
