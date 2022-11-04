@@ -851,8 +851,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1662554611}
   speed: 8
-  gravityMul: 1
-  jumpForce: 5
+  gravityMul: 2
+  jumpForce: 10
 --- !u!4 &629133772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4470001097677235513, guid: 2d0f27c980c7bba4d84a1db4f064e0c1, type: 3}
@@ -3883,7 +3883,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662554608}
-  m_LocalRotation: {x: 0.09506516, y: -0.0000000042821138, z: 4.0893186e-10, w: 0.99547106}
+  m_LocalRotation: {x: 0.09506516, y: 0.0000000042821138, z: -4.0893186e-10, w: 0.99547106}
   m_LocalPosition: {x: 0, y: 4.25, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4188,7 +4188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766974291}
-  m_LocalRotation: {x: 0.01666832, y: -0.000000004236829, z: 7.4364215e-10, w: 0.9998611}
+  m_LocalRotation: {x: 0.01666832, y: 0.000000004236829, z: -7.4364215e-10, w: 0.9998611}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

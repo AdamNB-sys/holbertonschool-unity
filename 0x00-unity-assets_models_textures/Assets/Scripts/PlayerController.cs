@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal") * speed;
         float vertical = Input.GetAxis("Vertical") * speed;
-        direction = new Vector3(horizontal, direction.y, vertical);
+        direction = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * new Vector3(horizontal, direction.y, vertical);
 
         if (controller.isGrounded)
         {
