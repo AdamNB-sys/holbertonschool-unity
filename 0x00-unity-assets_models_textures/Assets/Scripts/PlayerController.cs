@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    CharacterController controller;
+    public CharacterController controller;
     public Transform camera;
+    public Transform player;
 
     public float speed = 5f;
     public float gravityMul;
@@ -35,6 +36,11 @@ public class PlayerController : MonoBehaviour
             {
                 direction.y = jumpForce;
             }
+        }
+
+        if (player.position.y == -20.0f)
+        {
+            transform.position = new Vector3(0, 0, 0);
         }
 
         direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
