@@ -38,11 +38,11 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (controller.transform.position.y < -20.0f)
+        if (controller.transform.position.y < -30.0f)
         {
             // Debug.Log("player fell");
             controller.enabled = false;
-            transform.position = new Vector3(0, 20, 0);
+            transform.position = new Vector3(0, 35f, 0);
             controller.enabled = true;
         }
 
