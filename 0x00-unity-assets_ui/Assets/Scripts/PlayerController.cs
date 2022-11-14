@@ -12,10 +12,8 @@ public class PlayerController : MonoBehaviour
     public float gravityMul;
     public float jumpForce;
 
-    private Vector3 direction;
+    private Vector3 direction; 
 
-    // public float turnSmoothTime = 0.1f;
-    // float smoothVelocity;
 
     void Awake() 
     {
@@ -42,7 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             // Debug.Log("player fell");
             controller.enabled = false;
-            transform.position = new Vector3(0, 35f, 0);
+            transform.position = new Vector3(0, 50f, 0);
             controller.enabled = true;
         }
 
