@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -46,5 +48,11 @@ public class PlayerController : MonoBehaviour
 
         direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
         controller.Move(direction * Time.deltaTime);
+
+        // load menu when escape is pressed
+        if (Input.GetKey("escape"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
