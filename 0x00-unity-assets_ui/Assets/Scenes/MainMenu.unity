@@ -1089,6 +1089,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1071722000}
     m_Modifications:
+    - target: {fileID: 1059076465483637308, guid: 6947f7e8cc2f868428185ada33aa7ef3, type: 3}
+      propertyPath: m_Name
+      value: OptionsText
+      objectReference: {fileID: 0}
     - target: {fileID: 1059076465483637310, guid: 6947f7e8cc2f868428185ada33aa7ef3, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
@@ -1194,6 +1198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1071722000}
     m_Modifications:
+    - target: {fileID: 7007443580631331803, guid: dc2779d658bc82c4692f543d0b4064de, type: 3}
+      propertyPath: m_Name
+      value: ExitText
+      objectReference: {fileID: 0}
     - target: {fileID: 7007443580961102576, guid: dc2779d658bc82c4692f543d0b4064de, type: 3}
       propertyPath: m_Name
       value: ExitButton
