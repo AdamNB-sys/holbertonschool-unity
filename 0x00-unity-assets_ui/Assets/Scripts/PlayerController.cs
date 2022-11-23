@@ -50,9 +50,11 @@ public class PlayerController : MonoBehaviour
         controller.Move(direction * Time.deltaTime);
 
         // load menu when escape is pressed
+        /**
         if (Input.GetKey("escape"))
         {
             SceneManager.LoadScene("MainMenu");
         }
+        */
     }
 }
