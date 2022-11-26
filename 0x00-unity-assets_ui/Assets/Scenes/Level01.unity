@@ -637,6 +637,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6371392436913494499, guid: 6397f52d6c9104a4e90cba2837ca00e8, type: 3}
+--- !u!1 &428754915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8608471409070956380, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+  m_PrefabInstance: {fileID: 8608471409233874258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &428754920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428754915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e607585efc7cfb4e8b76fc4f0aef4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 428754915}
 --- !u!1001 &488917731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -874,6 +892,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerText: {fileID: 674633749}
   seconds: 0
+--- !u!114 &629133782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629133761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e607585efc7cfb4e8b76fc4f0aef4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 428754915}
 --- !u!1 &651410068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,7 +3626,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662554608}
-  m_LocalRotation: {x: 0.09506516, y: -0.0000000042821138, z: 4.0893186e-10, w: 0.99547106}
+  m_LocalRotation: {x: 0.09506516, y: 0.0000000042821138, z: -4.0893186e-10, w: 0.99547106}
   m_LocalPosition: {x: 0, y: 4.25, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4892,11 +4923,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017410235
+      value: 0.000000017410226
       objectReference: {fileID: 0}
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000003383358
+      value: -0.000000003383357
       objectReference: {fileID: 0}
     - target: {fileID: 4331255974003577460, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_Follow
@@ -4956,11 +4987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4331255974787860265, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000004236829
+      value: 0.000000004236829
       objectReference: {fileID: 0}
     - target: {fileID: 4331255974787860265, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 7.4364215e-10
+      value: -7.4364215e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
@@ -4971,6 +5002,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3297174874736134486, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: PauseCanvas
+      value: 
+      objectReference: {fileID: 428754915}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 428754920}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286429028680693451, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8608471409070956352, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5063,5 +5126,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3297174874736134486, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}

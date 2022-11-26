@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Updating...");
+        // Debug.Log("Updating...");
         if (Input.GetKeyDown("escape"))
         {
             Debug.Log("Escase key pressed");
@@ -29,27 +29,23 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        Debug.Log("ES-CA-PE!");
-        /**
-        if (isPlaying == true)
+        // Debug.Log("ES-CA-PE!");
+        if (isPaused == false)
         {
-            isPlaying = false;
+            isPaused = true;
             Time.timeScale = 0f;
             PauseCanvas.SetActive(true);
         }
-        */
     }
 
     public void Resume()
     {
-        Debug.Log("RE-SU-ME!");
-        /**
-        if (isPlaying == false)
+        // Debug.Log("RE-SU-ME!");
+        if (isPaused == true)
         {
-            isPlaying = true;
+            isPaused = false;
             Time.timeScale = 1;
             PauseCanvas.SetActive(false);
         }
-        */
     }
 }
