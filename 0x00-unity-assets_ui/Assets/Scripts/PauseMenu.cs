@@ -48,4 +48,19 @@ public class PauseMenu : MonoBehaviour
             PauseCanvas.SetActive(false);
         }
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Options()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
