@@ -4892,11 +4892,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017410226
+      value: -0.000000017410235
       objectReference: {fileID: 0}
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000003383357
+      value: 0.000000003383358
       objectReference: {fileID: 0}
     - target: {fileID: 4331255974003577460, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_Follow
@@ -5058,6 +5058,10 @@ PrefabInstance:
     - target: {fileID: 8608471409070956380, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608471409070956380, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
