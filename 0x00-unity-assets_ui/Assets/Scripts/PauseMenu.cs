@@ -16,7 +16,9 @@ public class PauseMenu : MonoBehaviour
         // Debug.Log("Updating...");
         if (Input.GetKeyDown("escape"))
         {
-            Debug.Log("Escase key pressed");
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            // Debug.Log("Escase key pressed");
             if (isPaused)
             {
                 Resume();
