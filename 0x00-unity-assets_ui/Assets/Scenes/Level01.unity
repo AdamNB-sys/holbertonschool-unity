@@ -237,7 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e607585efc7cfb4e8b76fc4f0aef4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPaused: 0
   PauseCanvas: {fileID: 110136273}
 --- !u!1 &132856298
 GameObject:
@@ -4911,11 +4910,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017410226
+      value: -0.000000017410235
       objectReference: {fileID: 0}
     - target: {fileID: 4331255973505941868, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000003383357
+      value: 0.000000003383358
       objectReference: {fileID: 0}
     - target: {fileID: 4331255974003577460, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_Follow
@@ -4990,6 +4989,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6024426085432806703, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024426085532724427, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024426085532724427, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5017,6 +5024,14 @@ PrefabInstance:
     - target: {fileID: 6024426085532724427, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024426085532724437, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024426085688511000, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024426085688511000, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5046,12 +5061,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6024426086809464910, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6713063794727999663, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 6713063794727999663, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713063794727999666, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}
+      propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6713063794727999667, guid: 01886c5d99dd34244881b9e4ab5718b6, type: 3}

@@ -7,13 +7,16 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     //Play state
-    public bool isPaused = false;
+    public static bool isPaused = false;
+
     public GameObject PauseCanvas;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        Debug.Log("Updating...");
+        if (Input.GetKeyDown("escape"))
         {
+            Debug.Log("Escase key pressed");
             if (isPaused)
             {
                 Resume();
