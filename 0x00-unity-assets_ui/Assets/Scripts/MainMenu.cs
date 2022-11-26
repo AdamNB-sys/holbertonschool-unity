@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     void Start() 
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
     public void LevelSelect(int level)
     {
@@ -18,6 +19,6 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quit Game!");
+        // Debug.Log("Quit Game!");
     }
 }
