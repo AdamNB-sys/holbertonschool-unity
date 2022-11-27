@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+
     public void Pause()
     {
         // Debug.Log("ES-CA-PE!");
