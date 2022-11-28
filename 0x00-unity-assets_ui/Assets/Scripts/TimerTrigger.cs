@@ -9,7 +9,6 @@ public class TimerTrigger : MonoBehaviour
 
     void OnTriggerExit(Collider other) 
     {
-        // Debug.Log("YAAA");
         if (other.gameObject.CompareTag("Player"))
         {
             stopWatch.enabled = true;

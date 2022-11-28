@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Text TimerText;
+    public Text WinText;
     public float seconds = 0;
 
     // Update is called once per frame
@@ -16,4 +17,11 @@ public class Timer : MonoBehaviour
         string s = (seconds % 60).ToString("f2");
         TimerText.text = m + ":" + s;
     }
+
+    /**
+    public void Win()
+    {
+
+    }
+    */
 }

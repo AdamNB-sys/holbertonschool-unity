@@ -13,12 +13,10 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        // Debug.Log("Updating...");
         if (Input.GetKeyDown("escape"))
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
-            // Debug.Log("Escase key pressed");
             if (isPaused)
             {
                 Resume();
@@ -32,7 +30,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        // Debug.Log("ES-CA-PE!");
         if (isPaused == false)
         {
             isPaused = true;
@@ -43,7 +40,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        // Debug.Log("RE-SU-ME!");
         if (isPaused == true)
         {
             isPaused = false;

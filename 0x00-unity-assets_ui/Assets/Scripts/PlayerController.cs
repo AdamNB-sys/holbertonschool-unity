@@ -46,7 +46,6 @@ public class PlayerController : MonoBehaviour
 
         if (controller.transform.position.y < -30.0f)
         {
-            // Debug.Log("player fell");
             controller.enabled = false;
             transform.position = new Vector3(0, 50f, 0);
             controller.enabled = true;
@@ -54,13 +53,5 @@ public class PlayerController : MonoBehaviour
 
         direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
         controller.Move(direction * Time.deltaTime);
-
-        // load menu when escape is pressed
-        /**
-        if (Input.GetKey("escape"))
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
-        */
     }
 }
