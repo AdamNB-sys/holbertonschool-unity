@@ -17,7 +17,6 @@ public class WinTrigger : MonoBehaviour
         {
             stopWatch.enabled = false;
             controller.enabled = false;
-            Cursor.visible = true;
             timerText.color = Color.green;
             timerText.fontSize = 60;
             WinCanvas.SetActive(true);
