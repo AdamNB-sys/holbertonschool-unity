@@ -7,6 +7,7 @@ public class TimerTrigger : MonoBehaviour
 {
     public Timer stopWatch;
 
+    // Starts timer when player moves
     void OnTriggerExit(Collider other) 
     {
         if (other.gameObject.CompareTag("Player"))

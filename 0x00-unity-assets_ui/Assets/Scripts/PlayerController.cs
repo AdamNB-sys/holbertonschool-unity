@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical") * speed;
         direction = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * new Vector3(horizontal, direction.y, vertical);
 
+        // Enables jump
         if (controller.isGrounded)
         {
             direction.y = 0f;
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // Fall check and respawn
         if (controller.transform.position.y < -30.0f)
         {
             controller.enabled = false;
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
         }
 
+        // Sets gravity for player
         direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
         controller.Move(direction * Time.deltaTime);
     }
