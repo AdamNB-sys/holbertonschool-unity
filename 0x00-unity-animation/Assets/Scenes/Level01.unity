@@ -3539,7 +3539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2e411ddbb7a954eaec5921f67a0ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 629133772}
+  player: {fileID: 629133776}
   isAirborne: 0
 --- !u!1 &1297829990
 GameObject:
