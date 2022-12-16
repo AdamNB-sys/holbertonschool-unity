@@ -5,6 +5,9 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     static Animator animator;
+    public Transform player;
+
+    // public bool isAirborne;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,11 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             animator.SetTrigger("isJumping");
+        }
+
+        if (player.position.y == 50f)
+        {
+            animator.SetTrigger("isFalling");
         }
     }
 }
