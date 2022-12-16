@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController controller;
     public Transform camera;
     public Transform player;
+    public Animator animator;
 
     public float speed = 5f;
     public float gravityMul;
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 direction; 
 
+    public bool isRunning = false;
+    public bool isJumping = false;
 
     void Awake() 
     {
@@ -49,6 +52,7 @@ public class PlayerController : MonoBehaviour
             direction.y = 0f;
             if (Input.GetKeyDown("space"))
             {
+                // animator.SetTrigger("isJumping");
                 direction.y = jumpForce;
             }
         }
