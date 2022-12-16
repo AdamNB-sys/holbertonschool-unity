@@ -33,9 +33,17 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal") * speed;
         float vertical = Input.GetAxis("Vertical") * speed;
+
+        // Sets movement direction to camera orientation
         direction = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * new Vector3(horizontal, direction.y, vertical);
 
-        // Enables jump
+        // Sets gravity for player
+        direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
+
+        // Enable player movement
+        controller.Move(direction * Time.deltaTime);
+
+        // Enable player jump
         if (controller.isGrounded)
         {
             direction.y = 0f;
@@ -52,9 +60,5 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(0, 50f, 0);
             controller.enabled = true;
         }
-
-        // Sets gravity for player
-        direction.y = direction.y + (Physics.gravity.y * gravityMul * Time.deltaTime);
-        controller.Move(direction * Time.deltaTime);
     }
 }

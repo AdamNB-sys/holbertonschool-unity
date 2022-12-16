@@ -5325,6 +5325,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 629133772}
     - target: {fileID: 4331255974003577460, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
+      propertyPath: m_YAxis.Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331255974003577460, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
       propertyPath: m_XAxis.m_MaxSpeed
       value: 300
       objectReference: {fileID: 0}
