@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     static Animator animator;
-    public Transform player;
+    public CharacterController player;
 
     public bool isAirborne = false;
 
@@ -34,16 +34,16 @@ public class AnimationController : MonoBehaviour
             animator.SetTrigger("isJumping");
         }
 
-        if (player.position.y == 50f)
+        if (player.transform.position.y == 50f)
         {
             isAirborne = true;
             animator.SetTrigger("isFalling");
         }
 
-        if (player.position.y < 2f)
+        if (player.isGrounded)
         {
-            animator.ResetTrigger("isFalling");
             isAirborne = false;
+            animator.ResetTrigger("isFalling");
         }
     }
 }
