@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AnimationController animator;
     public CharacterController controller;
     public Transform camera;
     public Transform player;
-    public Animator animator;
+
 
     public float speed = 5f;
     public float gravityMul;
@@ -34,6 +35,15 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal") * speed;
         float vertical = Input.GetAxis("Vertical") * speed;
 
+        if (horizontal == 0 && vertical == 0)
+        {
+            animator.Idle();
+        }
+        else
+        {
+            animator.Move();
+        }
+
         // Sets movement direction to camera orientation
         direction = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * new Vector3(horizontal, direction.y, vertical);
 
@@ -43,13 +53,29 @@ public class PlayerController : MonoBehaviour
         // Enable player movement
         controller.Move(direction * Time.deltaTime);
 
+        var amIJumping = false;
+
         // Enable player jump
-        if (controller.isGrounded)
+        if (controller.isGround1ed)
         {
+            Debug.Log("We're on the ground...");
             direction.y = 0f;
             if (Input.GetKeyDown("space"))
             {
+                animator.Jump();
+                amIJumping = true;
                 direction.y = jumpForce;
+            }
+            else
+            {
+                animator.IsGrounded();
+            }
+        }
+        else
+        {
+            if (!amIJumping)
+            {
+                animator.IsFalling();
             }
         }
 

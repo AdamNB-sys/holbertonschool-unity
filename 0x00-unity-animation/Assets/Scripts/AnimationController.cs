@@ -7,7 +7,7 @@ public class AnimationController : MonoBehaviour
     static Animator animator;
     public CharacterController player;
 
-    public bool isAirborne = false;
+    public bool isAirborne;
 
     // Start is called before the first frame update
     void Start()
@@ -15,35 +15,32 @@ public class AnimationController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Move()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-        {
-            animator.SetBool("isRunning", true);
-            animator.SetBool("isIdle", false);
-        }
-        else
-        {
-            animator.SetBool("isRunning", false);
-            animator.SetBool("isIdle", true);
-        }
+        animator.SetBool("isRunning", true);
+        animator.SetBool("isIdle", false);
+    }
 
-        if (Input.GetKeyDown("space"))
-        {
-            animator.SetTrigger("isJumping");
-        }
+    public void Idle()
+    {
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isIdle", true);
+    }
 
-        if (player.transform.position.y == 50f)
-        {
-            isAirborne = true;
-            animator.SetTrigger("isFalling");
-        }
+    public void Jump()
+    {
+        animator.SetTrigger("isJumping");
+    }
 
-        if (player.isGrounded)
-        {
-            isAirborne = false;
-            animator.ResetTrigger("isFalling");
-        }
+    public void IsFalling()
+    {
+        isAirborne = true;
+        animator.SetTrigger("isFalling");
+    }
+
+    public void IsGrounded()
+    {
+        isAirborne = false;
+        animator.ResetTrigger("isFalling");
     }
 }
