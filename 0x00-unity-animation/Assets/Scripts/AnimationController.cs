@@ -7,7 +7,7 @@ public class AnimationController : MonoBehaviour
     static Animator animator;
     public Transform player;
 
-    // public bool isAirborne;
+    public bool isAirborne = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,14 @@ public class AnimationController : MonoBehaviour
 
         if (player.position.y == 50f)
         {
+            isAirborne = true;
             animator.SetTrigger("isFalling");
+        }
+
+        if (player.position.y < 2f)
+        {
+            animator.ResetTrigger("isFalling");
+            isAirborne = false;
         }
     }
 }

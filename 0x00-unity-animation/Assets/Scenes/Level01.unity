@@ -889,6 +889,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 86315daf777e8c2478cc72841b172f27, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 09541bf47dc162347b4d801167a9f1e7, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09541bf47dc162347b4d801167a9f1e7, type: 3}
 --- !u!1 &428754915 stripped
@@ -1513,6 +1517,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 219833b2c205f0b4fa20c4511202c8e5, type: 3}
+--- !u!1 &589568065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4331255974003577467, guid: 95ce291e305fe1840b749b771fc969b6, type: 3}
+  m_PrefabInstance: {fileID: 4331255973333509244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &589568068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589568065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 1
+  m_IgnoreTag: Player
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 0
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0.6
+  m_DampingWhenOccluded: 0.6
+  m_OptimalTargetDistance: 0
 --- !u!1 &602601619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1219932435621719658, guid: 628ba20084515474caadd6b963dbe293, type: 3}
@@ -1557,6 +1596,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   camera: {fileID: 1662554611}
   player: {fileID: 629133772}
+  animator: {fileID: 0}
   speed: 8
   gravityMul: 2
   jumpForce: 10
@@ -3482,6 +3522,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac7c02b4adc7b6e41b039a8d27a3b0b0, type: 3}
   m_PrefabInstance: {fileID: 688552548}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1290523276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09541bf47dc162347b4d801167a9f1e7, type: 3}
+  m_PrefabInstance: {fileID: 403390428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1290523279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290523276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2e411ddbb7a954eaec5921f67a0ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 629133772}
+  isAirborne: 0
 --- !u!1 &1297829990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,7 +3563,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &1297829991
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3521,7 +3580,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!81 &1297829992
 AudioListener:
   m_ObjectHideFlags: 0
