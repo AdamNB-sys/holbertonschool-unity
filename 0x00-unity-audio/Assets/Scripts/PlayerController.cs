@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour
         // Enable player jump
         if (controller.isGrounded)
         {
-            Debug.Log("We're on the ground...");
-            direction.y = 0f;
+            // Debug.Log("We're on the ground...");
+            // direction.y = 0f;
             if (Input.GetKeyDown("space"))
             {
                 animator.Jump();
