@@ -27,5 +27,5 @@ glitches, and strange behaviour I need to work out before it is complete.
 * [Kenny](https://kenney.nl)
 * [Oculus Audio Pack](https://developer.oculus.com/downloads/package/oculus-audio-pack-1/)
 * [Mindful Audio](https://mindful-audio.com)
-* ["Wallpaper", "Cheery Monday" by Keving MacLeod](https://intranet.hbtn.io/rltoken/5z-4XlYcYNsl497P_Z4_cg)
+* ["Wallpaper", "Cheery Monday" by Kevin MacLeod](https://intranet.hbtn.io/rltoken/5z-4XlYcYNsl497P_Z4_cg)
 * Licensed under Creative Commons: By Attribution 3.0 https://creativecommons.org/licenses/by/3.0/
