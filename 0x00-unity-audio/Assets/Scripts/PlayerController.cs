@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         var amIJumping = false;
 
         // Enable player jump
-        if (controller.isGround1ed)
+        if (controller.isGrounded)
         {
             Debug.Log("We're on the ground...");
             direction.y = 0f;
