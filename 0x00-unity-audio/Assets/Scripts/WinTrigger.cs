@@ -9,16 +9,16 @@ public class WinTrigger : MonoBehaviour
     public Timer stopWatch;
     public Text timerText;
     public GameObject WinCanvas;
-    public AudioSource BackgroundMusic;
+    // public AudioSource BackgroundMusic;
     public CharacterController controller;
 
-    void Start() 
-    {
-        if (WinCanvas.IsActive)
-        {
-            BackgroundMusic.Stop();
-        }
-    }
+    // void Start() 
+    // {
+    //     if (WinCanvas.IsActive)
+    //     {
+    //         BackgroundMusic.Stop();
+    //     }
+    // }
 
     void OnTriggerEnter(Collider other)
     {
