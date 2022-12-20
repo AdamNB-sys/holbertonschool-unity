@@ -14,7 +14,7 @@ public class WinTrigger : MonoBehaviour
 
     void Start() 
     {
-        if (WinCanvas.enabled)
+        if (WinCanvas.IsActive)
         {
             BackgroundMusic.Stop();
         }
