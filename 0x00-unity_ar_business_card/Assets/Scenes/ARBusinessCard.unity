@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 129822806}
   - component: {fileID: 129822805}
   - component: {fileID: 129822804}
+  - component: {fileID: 129822807}
   m_Layer: 0
   m_Name: LinkedinButton
   m_TagString: Untagged
@@ -313,6 +314,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129822802}
   m_CullTransparentMesh: 1
+--- !u!225 &129822807
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129822802}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &352028146
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +796,7 @@ GameObject:
   - component: {fileID: 1264565723}
   - component: {fileID: 1264565725}
   - component: {fileID: 1264565724}
+  - component: {fileID: 1264565726}
   m_Layer: 0
   m_Name: SubheadText
   m_TagString: Untagged
@@ -907,6 +921,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264565722}
   m_CullTransparentMesh: 1
+--- !u!225 &1264565726
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264565722}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1264645353
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +944,7 @@ GameObject:
   - component: {fileID: 1264645354}
   - component: {fileID: 1264645356}
   - component: {fileID: 1264645355}
+  - component: {fileID: 1264645357}
   m_Layer: 0
   m_Name: HeaderText
   m_TagString: Untagged
@@ -1042,6 +1069,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264645353}
   m_CullTransparentMesh: 1
+--- !u!225 &1264645357
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264645353}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1317907755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1206,7 @@ GameObject:
   - component: {fileID: 1575926849}
   - component: {fileID: 1575926848}
   - component: {fileID: 1575926847}
+  - component: {fileID: 1575926850}
   m_Layer: 0
   m_Name: EmailButton
   m_TagString: Untagged
@@ -1277,6 +1317,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575926845}
   m_CullTransparentMesh: 1
+--- !u!225 &1575926850
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575926845}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1621114438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,6 +1341,7 @@ GameObject:
   - component: {fileID: 1621114442}
   - component: {fileID: 1621114441}
   - component: {fileID: 1621114440}
+  - component: {fileID: 1621114443}
   m_Layer: 0
   m_Name: BusinessCard
   m_TagString: Untagged
@@ -1382,6 +1435,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &1621114443
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621114438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e62a0fca9d2912740badda7e4515da1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1957026143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1467,7 @@ GameObject:
   - component: {fileID: 1957026147}
   - component: {fileID: 1957026146}
   - component: {fileID: 1957026145}
+  - component: {fileID: 1957026148}
   m_Layer: 0
   m_Name: GitHubButton
   m_TagString: Untagged
@@ -1504,3 +1578,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957026143}
   m_CullTransparentMesh: 1
+--- !u!225 &1957026148
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957026143}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
