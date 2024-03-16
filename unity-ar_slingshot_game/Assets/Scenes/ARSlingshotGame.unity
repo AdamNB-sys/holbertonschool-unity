@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a076e7dedf4411b96ca259dc65ce59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1670334725}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_XROrigin: {fileID: 0}
+  m_XROrigin: {fileID: 760664494}
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
