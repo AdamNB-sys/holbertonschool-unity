@@ -4,15 +4,18 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class RaycastScript : MonoBehaviour
+public class PlaneSelection : MonoBehaviour
 {
-    public GameObject spawn_prefab;
+    // Reference variables for plane detection and raycasting.
     ARRaycastManager arRayMan;
     ARPlaneManager arPlaneMan;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// This collects the references to the ARRaycastManager and ARPlaneManager components.
+    /// </summary>
+    void Awake()
     {
         arRayMan = GetComponent<ARRaycastManager>();
         arPlaneMan = GetComponent<ARPlaneManager>();
