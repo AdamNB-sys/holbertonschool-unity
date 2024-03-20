@@ -7,39 +7,47 @@ using UnityEngine.XR.ARSubsystems;
 public class RaycastScript : MonoBehaviour
 {
     public GameObject spawn_prefab;
-    GameObject spawned_object;
-    bool object_spawned;
-    ARRaycastManager arrayman;
+    ARRaycastManager arRayMan;
+    ARPlaneManager arPlaneMan;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     // Start is called before the first frame update
     void Start()
     {
-        object_spawned = false;
-        arrayman = GetComponent<ARRaycastManager>();
+        arRayMan = GetComponent<ARRaycastManager>();
+        arPlaneMan = GetComponent<ARPlaneManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // If the screen is touched, a ray is cast from the touch position. The plane that is hit is saved, while other planes are discarded.
         if (Input.touchCount > 0)
         {
             Debug.Log("Touch Found");
 
-            if (arrayman.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
+            if (arRayMan.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
             {
                 Debug.Log("Raycast Hit");
-                var hitPose = hits[0].pose;
+                var savedPlane = hits[0].trackable as ARPlane;
+                
+                foreach (var plane in arRayMan.trackables)
+                {
+                    if (plane != savedPlane)
+                    {
+                        plane.gameObject.SetActive(false);
+                    }
+                }
+                // Disable the ARRaycastManager and the ARPlaneManager to prevent further planes from being detected.
+                var planeSubsystem = arPlaneMan.subsystem;
 
-                if (!object_spawned)
+                if (planeSubsystem != null)
                 {
-                    spawned_object = Instantiate(spawn_prefab, hitPose.position, hitPose.rotation);
-                    object_spawned = true;
+                    planeSubsystem.Stop();
                 }
-                else
-                {
-                    spawned_object.transform.position = hitPose.position;
-                }
+
+                arRayMan.enabled = false;
+                arPlaneMan.enabled = false;
             }
         }
     }
